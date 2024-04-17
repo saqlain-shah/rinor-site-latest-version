@@ -38,7 +38,7 @@ const Services = () => {
                   What We Offer
                 </h2>
                 <p class="text-body-color text-base">
-                RINOR handles flights, hotels, tours and even car rentals. Want an ordinary tour or something special? We can do both by customizing our services at your convenience! Explore religious sites, local culture, and nature wonders. We connect you with friendly locals for unique experiences.                </p>
+                Rinor handles flights, hotels, tours and even car rentals. Want an ordinary tour or something special? We can do both by customizing our services at your convenience! Explore religious sites, local culture, and nature wonders. We connect you with friendly locals for unique experiences.                </p>
               </div>
             </div>
           </div>

@@ -18,7 +18,7 @@ const HiddenPlaces = () => {
     //     </div>
     //     <div>
     //       <img
-    //         src="https://firebasestorage.googleapis.com/v0/b/travely-7264c.appspot.com/o/dsc_0128.webp?alt=media&token=a06ac6b6-450a-49ac-9330-e345e9e0e755"
+    //         src="https://firebasestorage.googleapis.com/v0/b/Travely-7264c.appspot.com/o/dsc_0128.webp?alt=media&token=a06ac6b6-450a-49ac-9330-e345e9e0e755"
     //         alt=""
     //       />
     //     </div>
@@ -27,7 +27,7 @@ const HiddenPlaces = () => {
     //   <div className="grid grid-cols-2 mt-10 gap-5">
     //     <div>
     //       <img
-    //         src="https://firebasestorage.googleapis.com/v0/b/travely-7264c.appspot.com/o/dsc_0128.webp?alt=media&token=a06ac6b6-450a-49ac-9330-e345e9e0e755"
+    //         src="https://firebasestorage.googleapis.com/v0/b/Travely-7264c.appspot.com/o/dsc_0128.webp?alt=media&token=a06ac6b6-450a-49ac-9330-e345e9e0e755"
     //         alt=""
     //       />
     //     </div>

@@ -41,9 +41,9 @@ const Aboutus = () => {
                   Why Choose Us
                 </span>
                 <h2 className="text-dark mb-8 text-3xl font-bold sm:text-4xl">
-With RINOR                </h2>
+With Rinor                </h2>
 <p className="text-body-color mb-8 text-base">
-your Gilgit-Baltistan adventure is full of discovery and adventure. As the top service provider in the region since 2017, RINOR ensures healthy experiences – from booking flights and comfortable accommodations to unique adventure, sightseeing, cultural and religious tours for over 12 years. RINOR offers a trusted network and an experienced team to ensure your tour's efficiency and quality.     </p>
+your Gilgit-Baltistan adventure is full of discovery and adventure. As the top service provider in the region since 2017, Rinor ensures healthy experiences – from booking flights and comfortable accommodations to unique adventure, sightseeing, cultural and religious tours for over 12 years. Rinor offers a trusted network and an experienced team to ensure your tour's efficiency and quality.     </p>
                
                 {/* <p className="text-body-color mb-12 text-base">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse

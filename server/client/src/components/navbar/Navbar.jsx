@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <nav className="flex justify-around w-full py-4 bg-gray-50 sticky top-0 z-[999]">
       <div className="flex items-center">
-        <h3 className="text-2xl font-bold text-[#41A4FF]">Travely</h3>
+        <h3 className="text-2xl font-bold text-[#41A4FF]">RINOR</h3>
       </div>
       {/* <!-- left header section --> */}
       <div className="items-center hidden space-x-5 md:flex">
@@ -129,7 +129,7 @@ const Navbar = () => {
             : "fixed left-[-100%]"
         }
       >
-        <h1 className="text-2xl font-medium text-blue-500 m-8">Travely</h1>
+        <h1 className="text-2xl font-medium text-blue-500 m-8">RINOR</h1>
         <ul className="p-4 mt-20">
           <li className="p-4 border-b border-gray-600">
             <Link to="/">Home</Link>

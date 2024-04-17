@@ -9,7 +9,7 @@ const Hero3 = () => {
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="mt-10 lg:mt-0">
                 <span className="text-[#41A4FF] mb-2 block text-lg font-semibold">
-                  Let's explore with RINOR
+                  Let's explore with Rinor
                 </span>
                 <h2 className="text-dark mb-8 text-3xl font-bold sm:text-4xl">
                   TAKE ONLY MEMORIES, LEAVE ONLY FOOTPRINTS
