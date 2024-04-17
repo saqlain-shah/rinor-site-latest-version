@@ -4,32 +4,24 @@ import { MdTour } from "react-icons/md";
 import { AiFillCar } from "react-icons/ai";
 import { BiRestaurant } from "react-icons/bi";
 import { BsCalendarEvent } from "react-icons/bs";
+import { MdOutlineFlight } from "react-icons/md";
 
 const categories = [
   {
-    name: "Hotel Reservation",
+    name: "Flight",
+    icon: <MdOutlineFlight />
+    
+  },
+  {
+    name: "Accommodation ",
     icon: <FaHotel />,
   },
   {
-    name: "Tour Package Reservation",
+    name: "Tour",
     icon: <MdTour />,
   },
-  {
-    name: "Vehicle Reservation",
-    icon: <AiFillCar />,
-  },
-  {
-    name: "Train Reservation",
-    icon: <FaTrain />,
-  },
-  {
-    name: "Restaurent Reservation",
-    icon: <BiRestaurant />,
-  },
-  {
-    name: "Event Reservation",
-    icon: <BsCalendarEvent />,
-  },
+
+
 ];
 const Services = () => {
   return (
@@ -46,8 +38,7 @@ const Services = () => {
                   What We Offer
                 </h2>
                 <p class="text-body-color text-base">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Quaerat reprehenderit autem ea ab repellat eum, quasi modi,
+                Accompanying us, you have a trip full of experiences. With RINOR: ticketing, hotels, tours, and many more.
                 </p>
               </div>
             </div>

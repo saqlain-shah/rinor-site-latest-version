@@ -41,18 +41,15 @@ const Aboutus = () => {
                   Why Choose Us
                 </span>
                 <h2 className="text-dark mb-8 text-3xl font-bold sm:text-4xl">
-                  Lorem ipsum dolor sit amet
-                </h2>
-                <p className="text-body-color mb-8 text-base">
+Why RINOR                </h2>
+<p className="text-body-color mb-8 text-base">
+At RINOR, we're your one-stop-shop for all your travel needs. From flights to hotels, tours to car rentals, we've got it all covered. Let us take care of the details while you focus on creating memories that last a lifetime.                </p>
+               
+                {/* <p className="text-body-color mb-12 text-base">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
                   nulla enim aperiam culpa cupiditate quas animi ducimus
                   blanditiis! Dolorum, perspiciatis.
-                </p>
-                <p className="text-body-color mb-12 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-                  nulla enim aperiam culpa cupiditate quas animi ducimus
-                  blanditiis! Dolorum, perspiciatis.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>

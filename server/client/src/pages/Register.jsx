@@ -51,7 +51,7 @@ const Register = () => {
       Swal.fire("Please enter a valid email address", "", "error");
       return;
     }
-    if (mobile.length !== 10) {
+    if (mobile.length !== 11) {
       Swal.fire({
         icon: "error",
         title: "Oops...",

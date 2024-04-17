@@ -160,7 +160,7 @@ const AdminNavbar = () => {
         }
       >
         <Link to="/admin" className="text-2xl font-medium text-blue-500 m-8">
-          Travely
+          RINOR
         </Link>
         <ul className="px-4">
           {user ? (
