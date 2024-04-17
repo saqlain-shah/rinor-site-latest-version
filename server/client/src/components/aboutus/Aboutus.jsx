@@ -41,9 +41,9 @@ const Aboutus = () => {
                   Why Choose Us
                 </span>
                 <h2 className="text-dark mb-8 text-3xl font-bold sm:text-4xl">
-Why RINOR                </h2>
+With RINOR                </h2>
 <p className="text-body-color mb-8 text-base">
-At RINOR, we're your one-stop-shop for all your travel needs. From flights to hotels, tours to car rentals, we've got it all covered. Let us take care of the details while you focus on creating memories that last a lifetime.                </p>
+your Gilgit-Baltistan adventure is full of discovery and adventure. As the top service provider in the region since 2017, RINOR ensures healthy experiences – from booking flights and comfortable accommodations to unique adventure, sightseeing, cultural and religious tours for over 12 years. RINOR offers a trusted network and an experienced team to ensure your tour's efficiency and quality.     </p>
                
                 {/* <p className="text-body-color mb-12 text-base">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse

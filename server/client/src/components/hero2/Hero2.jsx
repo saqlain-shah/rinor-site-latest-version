@@ -13,8 +13,7 @@ const Hero2 = () => {
             RINOR
             </h1>
             <p class="mt-4">
-            Accompanying us, you have a trip full of experiences. With RINOR: ticketing, hotels, tours, and many more.
-            </p>
+            Experience Gilgit-Baltistan like never before. RINOR takes care of everything – flight, Accommodation & tour.            </p>
             <button className="bg-black text-white px-2 py-3 rounded-lg hover:bg-white hover:border hover:text-black hover:font-bold mt-4">
               Get started
             </button>

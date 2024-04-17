@@ -9,12 +9,12 @@ const Hero3 = () => {
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="mt-10 lg:mt-0">
                 <span className="text-[#41A4FF] mb-2 block text-lg font-semibold">
-                  Trvel with us
+                  Let's explore with RINOR
                 </span>
                 <h2 className="text-dark mb-8 text-3xl font-bold sm:text-4xl">
                   TAKE ONLY MEMORIES, LEAVE ONLY FOOTPRINTS
                 </h2>
-                <p className="text-body-color mb-8 text-base">
+                {/* <p className="text-body-color mb-8 text-base">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
                   nulla enim aperiam culpa cupiditate quas animi ducimus
                   blanditiis! Dolorum, perspiciatis.
@@ -23,7 +23,7 @@ const Hero3 = () => {
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
                   nulla enim aperiam culpa cupiditate quas animi ducimus
                   blanditiis! Dolorum, perspiciatis.
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="w-full lg:w-6/12">
