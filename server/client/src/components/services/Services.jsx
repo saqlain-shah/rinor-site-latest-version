@@ -31,12 +31,12 @@ const Services = () => {
           <div class="-mx-4 flex flex-wrap">
             <div class="w-full px-4">
               <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
-                <span class="text-primary mb-2 block text-lg font-semibold">
+                <span class="text-primary mb-2 block text-2xl font-semibold">
                   Our Services
                 </span>
-                <h2 class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]">
+                {/* <h2 class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]">
                   What We Offer
-                </h2>
+                </h2> */}
                 <p class="text-body-color text-base">
                 Rinor handles flights, hotels, tours and even car rentals. Want an ordinary tour or something special? We can do both by customizing our services at your convenience! Explore religious sites, local culture, and nature wonders. We connect you with friendly locals for unique experiences.                </p>
               </div>

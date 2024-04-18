@@ -5,31 +5,31 @@ import { Menu } from "@headlessui/react";
 const nav_links = [
   {
     path: "/tours/home",
-    display: "Explore SriLanka",
+    display: "Explore Gilgit Baltistan",
   },
   {
-    path: "/sunandbeach",
-    display: "Sun and Beach",
-  },
-  {
-    path: "/hikingandtrekking",
-    display: "Hiking and Trekking",
-  },
-  {
-    path: "/wildsafari",
-    display: "Wild Safari",
+    path: "/experiential",
+    display: "Experiential",
   },
   {
     path: "/cultural",
     display: "Cultural",
   },
   {
-    path: "/special",
-    display: "Special Tours",
+    path: "/special-interest",
+    display: "Special Interest",
   },
   {
-    path: "/festival",
-    display: "Festivals",
+    path: "/leisure",
+    display: "Leisure",
+  },
+  {
+    path: "/business",
+    display: "Business",
+  },
+  {
+    path: "/customized",
+    display: "Customized",
   },
 ];
 

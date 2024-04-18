@@ -2,8 +2,8 @@ import React from "react";
 import SearchBar from "./SearchBar";
 
 const image = {
-  backgroundImage:
-    "url('https://firebasestorage.googleapis.com/v0/b/travely-7264c.appspot.com/o/header%20photo.jpg?alt=media&token=81dbb6a1-7b18-473d-a151-dbe0a59e8bb7')",
+  backgroundImage: "url(/Landscape/Banner-7.jpg)",
+  // "url('https://firebasestorage.googleapis.com/v0/b/travely-7264c.appspot.com/o/header%20photo.jpg?alt=media&token=81dbb6a1-7b18-473d-a151-dbe0a59e8bb7')",
   height: "500px",
   backgroundPosition: "50%",
 };
@@ -20,13 +20,13 @@ const HeroTour = () => {
           <div class="flex h-full items-center justify-center text-center">
             <div>
               <h2
-                class="mb-5  text-6xl font-bold text-black "
+                class="mb-5 text-6xl font-bold text-black "
                 style={{
                   fontFamily: "Poppins, sans-serif",
                   fontWeight: "bolder",
                 }}
               >
-                Do More With Rinor
+                Let's Explore With RINOR
               </h2>
               <div>
                 <div className="mt-12 w-1/2 mr-auto ml-auto">
@@ -39,8 +39,8 @@ const HeroTour = () => {
                       textShadow: "3px 1px black",
                     }}
                   >
-                    an island awaits you <br />
-                    Discover sri Lanka
+                    Heaven on Earth <br />
+                    Gilgit Baltistan
                   </h4>
                 </div>
               </div>

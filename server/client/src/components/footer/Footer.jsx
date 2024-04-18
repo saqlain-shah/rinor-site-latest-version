@@ -35,7 +35,7 @@ const Footer = () => {
         <div className="ml-[8rem]">
           <h6 className="font-bold text-[#41A4FF]">Contact</h6>
           <ul className="mt-2 font-light">
-            <li className="py-2 text-sm">info@Rinor.pk</li>
+            <li className="py-2 text-sm">info@rinor.pk</li>
             <li className="py-2 text-sm">(058154) 57424-5</li>
             <li className="py-2 text-sm">0340-0596665</li>
             <li className="py-2 text-sm">Rinor, Jama Masjid Rd, Skardu, Gilgit-Baltistan</li>

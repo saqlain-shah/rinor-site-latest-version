@@ -191,12 +191,12 @@ const RouteTour = () => {
       <Route path="/tour/view" element={<TourView />} />
       <Route path="/tour/update" element={<UpdateTour />} />
 
-      <Route path="/sunandbeach" element={<AllTourCategories />} />
-      <Route path="/hikingandtrekking" element={<AllTourCategories />} />
-      <Route path="/wildsafari" element={<AllTourCategories />} />
-      <Route path="/special" element={<AllTourCategories />} />
+      <Route path="/experiential" element={<AllTourCategories />} />
       <Route path="/cultural" element={<AllTourCategories />} />
-      <Route path="/festival" element={<AllTourCategories />} />
+      <Route path="/special-interest" element={<AllTourCategories />} />
+      <Route path="/leisure" element={<AllTourCategories />} />
+      <Route path="/business" element={<AllTourCategories />} />
+      <Route path="/customized" element={<AllTourCategories />} />
 
       <Route path="/contactus" element={<ContactUs />} />
 

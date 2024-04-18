@@ -6,8 +6,8 @@ import TourNav from "../../components/navbar/TourNav";
 import axios from "axios";
 
 const image = {
-  backgroundImage:
-    "url('https://firebasestorage.googleapis.com/v0/b/travely-7264c.appspot.com/o/header%20photo.jpg?alt=media&token=81dbb6a1-7b18-473d-a151-dbe0a59e8bb7')",
+  backgroundImage: "url(/Landscape/Banner-7.jpg)",
+    // "url('https://firebasestorage.googleapis.com/v0/b/travely-7264c.appspot.com/o/header%20photo.jpg?alt=media&token=81dbb6a1-7b18-473d-a151-dbe0a59e8bb7')",
   height: "300px",
   backgroundPosition: "50%",
 };
@@ -69,8 +69,8 @@ const SerachResults = () => {
                       textShadow: "3px 1px black",
                     }}
                   >
-                    an island awaits you <br />
-                    Discover sri Lanka
+                    Heaven on Earth<br />
+                    Gilgit Baltistan
                   </h4>
                 </div>
               </div>
@@ -104,7 +104,7 @@ const SerachResults = () => {
             <AiOutlineRight className="mt-1 mx-2" />
           </li>
           <li class="text-neutral-500 dark:text-neutral-400">
-            Explore Sri Lanka
+            Explore Gilgit Baltistan
           </li>
         </ol>
       </nav>

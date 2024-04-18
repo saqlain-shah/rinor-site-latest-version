@@ -55,7 +55,7 @@ const HiddenPlaces = () => {
           <p className="font-extrabold text-2xl mb-3">Sembuwaththa Lake</p>
           <p>
             Sembuwatta Lake is a stunning man-made lake located in the hill
-            country of Sri Lanka, near the town of Elkaduwa in the Matale
+            country of Gilgit Baltistan, near the town of Elkaduwa in the Matale
             District. The lake is situated around 1,150 meters above sea level
             and is surrounded by lush green hills covered with tea plantations,
             eucalyptus trees, and dense forest. The Sembuwatta Lake was created
@@ -65,7 +65,7 @@ const HiddenPlaces = () => {
             is crystal clear and has a bluish-green tint, which makes it a
             popular destination for swimming and boating. In addition to its
             natural beauty, Sembuwatta Lake is also a popular picnic spot and
-            tourist attraction in Sri Lanka. Visitors can enjoy a variety of
+            tourist attraction in Gilgit Baltistan. Visitors can enjoy a variety of
             activities at the lake, including boating, fishing, swimming, and
             hiking in the surrounding hills. There are also several small
             waterfalls and streams that flow into the lake, creating a
@@ -74,7 +74,7 @@ const HiddenPlaces = () => {
             views of the surrounding hills and tea plantations. The bridge is
             also a popular spot for taking photographs, especially during
             sunrise and sunset. Overall, Sembuwatta Lake is a beautiful and
-            peaceful destination in Sri Lanka that offers a perfect getaway from
+            peaceful destination in Gilgit Baltistan that offers a perfect getaway from
             the hustle and bustle of city life. It is a must-visit location for
             nature lovers and those seeking a serene and tranquil atmosphere. */}
           </p>
