@@ -31,11 +31,15 @@ const Navbar = () => {
   return (
     <nav className="flex justify-around w-full py-4 bg-gray-50 sticky top-0 z-[999]">
       <div className="flex items-center">
-        <h3 className="text-2xl font-bold text-[#41A4FF]">RINOR</h3>
-        {/* <img
-          src="/RinorLogo.png"
+        <Link to={"/"}>
+          {/* <h3 className="text-2xl font-bold text-[#41A4FF]">RINOR</h3> */}
+        <img
+          src="/RinorLogoColor.png"
           alt="RINOR"
-        /> */}
+          width={"auto"}
+          height={"20px"}
+        />
+        </Link>
       </div>
       {/* <!-- left header section --> */}
       <div className="items-center hidden space-x-5 md:flex">
@@ -47,7 +51,7 @@ const Navbar = () => {
       </div>
       {/* <!-- right header section --> */}
       <div className="items-center space-x-3 hidden md:flex">
-        {user ? (
+        {/* {user ? (
           <>
             <button className=""></button>
             <Menu as="div" className="relative inline-block text-left">
@@ -117,7 +121,7 @@ const Navbar = () => {
               Sign up
             </Link>
           </>
-        )}
+        )} */}
       </div>
       <div className="block md:hidden" onClick={handleNav}>
         {nav ? (
@@ -133,7 +137,14 @@ const Navbar = () => {
             : "fixed left-[-100%]"
         }
       >
-        <h1 className="text-2xl font-medium text-blue-500 m-8">RINOR</h1>
+       <Link to={"/"} className="m-8 justify-center">
+        <img
+          src="/RinorLogoColor.png"
+          alt="RINOR"
+          width={"auto"}
+          height={"20px"}
+        />
+        </Link>
         <ul className="p-4 mt-20">
           <li className="p-4 border-b border-gray-600">
             <Link to="/">Home</Link>

@@ -1,14 +1,16 @@
 import React from "react";
-import Tours from "../../assets/data/tours";
 import { BsHandThumbsUpFill, BsHandThumbsDownFill } from "react-icons/bs";
 import { IoCheckmarkDoneSharp } from "react-icons/io5";
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import { tourData } from "../../pages/Tour/tourData";
+import { useParams } from "react-router-dom";
 
 const InclusionExclusion = () => {
-  const tour = Tours.find((tour) => tour.id === 1);
+  const { id } = useParams();
+  const tour = tourData.find((tour) => tour.id === id);
   console.log(tour);
 
-  const { inclusions, exclusions } = tour;
+  const { inclusions, exclusions, ...rest } = tour;
   console.log(inclusions);
   return (
     <div>
@@ -48,15 +50,15 @@ const InclusionExclusion = () => {
             <div
               data-te-stepper-content-ref
               class="transition-[height, margin-bottom, padding-top, padding-bottom]
-         text-xl left-0 overflow-hidden pb-6  ps-1 duration-300 ease-in-out pl-28 pr-28"
+         text-xl left-0 overflow-hidden pb-6  ps-1 duration-300 ease-in-out pl-28"
             >
-              {inclusions.map((include) => (
-                <ul>
-                  <li>
-                    <div className="flex flex-row gap-4">
-                      <IoCheckmarkDoneSharp className="text-3xl text-green-500" />
-                      {include}
-                    </div>
+              {inclusions && inclusions.map((include, index) => (
+                <ul key={index} >
+                  <li className="flex gap-4">
+                    {/* <div className="flex flex-row gap-4"> */}
+                    <IoCheckmarkDoneSharp className="text-3xl text-green-500" />
+                    <div>{include}</div>
+                    {/* </div> */}
                   </li>
                 </ul>
               ))}
@@ -89,9 +91,9 @@ const InclusionExclusion = () => {
               class="transition-[height, margin-bottom, padding-top, padding-bottom]
          text-xl left-0 overflow-hidden pb-6  ps-1 duration-300 ease-in-out pl-28 pr-28"
             >
-              {exclusions.map((exclude) => (
+              {exclusions && exclusions.map((exclude) => (
                 <ul>
-                  <div className="flex flex-row gap-4">
+                  <div className="flex gap-4">
                     <AiOutlineCloseCircle className="text-3xl text-red-600" />
                     {exclude}
                   </div>

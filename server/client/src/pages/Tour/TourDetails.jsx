@@ -8,105 +8,100 @@ import DaysShow from "../../components/Tour/DaysShow";
 import InclusionExclusion from "../../components/Tour/InclusionExclusion";
 import { AuthContext } from "../../context/authContext";
 import Swal from "sweetalert2";
+import { tourData } from "./tourData";
 import axios from "axios";
+import { Rating } from "@mui/material";
 
 const TourDetails = () => {
   const { id } = useParams();
 
-  const [firstName, setFname] = useState("");
-  const [lastName, setLname] = useState("");
-  const [date, setDate] = useState("");
-  const [phone, setPhone] = useState(0);
-  const [guestCount, setGuests] = useState("");
+  // const [firstName, setFname] = useState("");
+  // const [lastName, setLname] = useState("");
+  // const [date, setDate] = useState("");
+  // const [phone, setPhone] = useState(0);
+  // const [guestCount, setGuests] = useState("");
 
-  const [allTours, setTour] = useState([]);
+  const [allTours, setTour] = useState({});
   useEffect(() => {
-    const getTours = async () => {
-      try {
-        const response = await axios.get(`/tours/${id}`);
-        console.log(response.data.data.oneTour);
-        setTour(response.data.data.oneTour);
-      } catch (err) {
-        console.log(err.message);
-      }
-    };
-    getTours();
+    const data = tourData.find((tour) => tour.id === id)
+    console.log("Data", data)
+    setTour(data);
     initTE({ Stepper, initTE, Ripple, Input, Datepicker });
   }, [id]);
   //get email of current user
-  const { user } = useContext(AuthContext);
-  const currentUser = user.email;
+  // const { user } = useContext(AuthContext);
+  // // const currentUser = user.email;
 
-  const inputHandler = async (e) => {
-    e.preventDefault();
+  // const inputHandler = async (e) => {
+  //   e.preventDefault();
 
-    if (
-      firstName === "" ||
-      lastName === "" ||
-      date === "" ||
-      phone === "" ||
-      guestCount === ""
-    ) {
-      Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "missing required fields!",
-      });
-      return;
-    }
+  //   if (
+  //     firstName === "" ||
+  //     lastName === "" ||
+  //     date === "" ||
+  //     phone === "" ||
+  //     guestCount === ""
+  //   ) {
+  //     Swal.fire({
+  //       icon: "error",
+  //       title: "Oops...",
+  //       text: "missing required fields!",
+  //     });
+  //     return;
+  //   }
 
-    if (phone.length !== 10) {
-      Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "enter valid mobile number",
-      });
-      return;
-    }
+  //   if (phone.length !== 10) {
+  //     Swal.fire({
+  //       icon: "error",
+  //       title: "Oops...",
+  //       text: "enter valid mobile number",
+  //     });
+  //     return;
+  //   }
 
-    if (guestCount > allTours.groupCount) {
-      Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: `This tour can have maximum of ${allTours.groupCount} members`,
-      });
-      return;
-    }
-    const tourReservation = {
-      currentUser,
-      firstName,
-      lastName,
-      date,
-      phone,
-      guestCount,
-    };
+  //   if (guestCount > allTours.groupCount) {
+  //     Swal.fire({
+  //       icon: "error",
+  //       title: "Oops...",
+  //       text: `This tour can have maximum of ${allTours.groupCount} members`,
+  //     });
+  //     return;
+  //   }
+  //   const tourReservation = {
+  //     // currentUser,
+  //     firstName,
+  //     lastName,
+  //     date,
+  //     phone,
+  //     guestCount,
+  //   };
 
-    try {
-      const result = await Swal.fire({
-        title: "Do you want to Book this tour?",
-        showDenyButton: true,
-        showCancelButton: true,
-        confirmButtonText: "Book",
-        denyButtonText: `Don't Book`,
-      });
+  //   try {
+  //     const result = await Swal.fire({
+  //       title: "Do you want to Book this tour?",
+  //       showDenyButton: true,
+  //       showCancelButton: true,
+  //       confirmButtonText: "Book",
+  //       denyButtonText: `Don't Book`,
+  //     });
 
-      if (result.isConfirmed) {
-        const response = await axios.post(
-          "/tours/tourReservation",
-          tourReservation
-        );
-        Swal.fire(response.data.message, "", "success");
-      } else if (result.isDenied) {
-        Swal.fire("Tour Booking Cancelled", "", "error");
-      }
-    } catch (err) {
-      Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: err.message,
-      });
-    }
-  };
+  //     if (result.isConfirmed) {
+  //       const response = await axios.post(
+  //         "/tours/tourReservation",
+  //         tourReservation
+  //       );
+  //       Swal.fire(response.data.message, "", "success");
+  //     } else if (result.isDenied) {
+  //       Swal.fire("Tour Booking Cancelled", "", "error");
+  //     }
+  //   } catch (err) {
+  //     Swal.fire({
+  //       icon: "error",
+  //       title: "Oops...",
+  //       text: err.message,
+  //     });
+  //   }
+  // };
 
   return (
     <div>
@@ -134,8 +129,8 @@ const TourDetails = () => {
           <div>
             <p className="text-3xl font-bold mb-6  text-gray-500">Ranking</p>
             <div className="flex flex-row mr-2 space-x-2">
-              <p className="text-2xl mb-6">{}</p>
-              <AiFillStar className="text-3xl text-yellow-500 " />
+              <Rating name="rating" value={allTours.rating?allTours.rating:0} size="large" precision={0.5} readOnly />
+              {/* <AiFillStar className="text-3xl text-yellow-500 " /> */}
             </div>
           </div>
           <div>
@@ -151,25 +146,25 @@ const TourDetails = () => {
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-2 xl:gap-x-8">
           {/* image left */}
           <div className="">
-            <div>
+            {/* <div>
               <img
                 src={allTours.img}
                 alt={""}
                 class="h-auto max-w-full rounded-3xl"
               />
-            </div>
-            {/* below map */}
+            </div> */}
+            {/* below map
             <div className="mt-5 grid grid-cols-2 gap-2">
-              {/* left */}
+              {/* left 
               <div>
                 <img
                   src="https://firebasestorage.googleapis.com/v0/b/travely-7264c.appspot.com/o/route1.png?alt=media&token=99974a15-ffab-4900-b805-5da493d16d73"
                   alt=""
                 />
               </div>
-              {/* right */}
+              {/* right 
               <div className="flex flex-col gap-6 ">
-                {/* Download Brochure */}
+                {/* Download Brochure 
                 <button
                   type="button"
                   data-te-ripple-init
@@ -221,12 +216,12 @@ const TourDetails = () => {
             </div>
           </div>
 
-          {/* details -right*/}
+          {/* details -right
           <div className="shadow-2xl rounded-xl border-dotted border-2 border-sky-500 grid grid-cols-1 px-4">
             <div>
-              {/* first row */}
+              {/* first row 
               <div className="grid grid-cols-2">
-                {/* left col */}
+                {/* left col 
                 <div>
                   <p className="text-lg p-2 font-bold ">Starting From</p>
                   <p className="p-3 ml-10 text-blue-600  text-5xl">
@@ -234,15 +229,15 @@ const TourDetails = () => {
                     <span className="text-sm text-black">/Per Person</span>
                   </p>
                 </div>
-                {/* right col */}
+                //* right col 
                 <div className="flex flex-row-reverse space-x-2 float-right pt-3 ">
-                  {/* <p className="text-lg">({reviews.length} Reviews)</p> */}
+                  /* <p className="text-lg">({reviews.length} Reviews)</p> 
                   <AiFillStar className="text-2xl text-yellow-500 " />
-                  <p className="text-lg mb-6">{}</p>
+                  <p className="text-lg mb-6">{ }</p>
                 </div>
               </div>
 
-              {/* second row */}
+              //second row
               <div className="flex flex-row pl-10 pt-2 pr-2 space-x-3 mb-4">
                 <p className="text-xl font-bold">Cities:</p>
                 <p className="text-xl  mb-0   text-blue-500">
@@ -250,7 +245,7 @@ const TourDetails = () => {
                 </p>
               </div>
 
-              {/* third row */}
+              // third row 
               <div className="text-xl p-2 grid grid-cols-2">
                 <div>
                   <span className="font-bold">Tour ID :</span> T0027
@@ -266,7 +261,7 @@ const TourDetails = () => {
               </div>
             </div>
             {/* booking form */}
-            <div className="px-4 mb-6 mt-2">
+            {/* <div className="px-4 mb-6 mt-2">
               <p className="text-3xl mb-10 text-center">Booking Details</p>
               <div className="flex justify-center items-center">
                 <div class=" block max-w-md rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
@@ -309,7 +304,7 @@ const TourDetails = () => {
                         </label>
                       </div>
                     </div>
-                    {/* date */}
+                    //date 
                     <div
                       class="relative mb-3"
                       id="datepicker-disable-past"
@@ -333,7 +328,7 @@ const TourDetails = () => {
                       </label>
                     </div>
 
-                    {/* phone number */}
+                    // phone number
                     <div class="grid grid-cols-2 gap-4">
                       <div class="relative mb-6" data-te-input-wrapper-init>
                         <input
@@ -382,7 +377,7 @@ const TourDetails = () => {
                   </form>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

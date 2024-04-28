@@ -5,25 +5,29 @@ import { AiFillCar } from "react-icons/ai";
 import { BiRestaurant } from "react-icons/bi";
 import { BsCalendarEvent } from "react-icons/bs";
 import { MdOutlineFlight } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 const categories = [
   {
     name: "Flight",
-    icon: <MdOutlineFlight />
-    
+    icon: <MdOutlineFlight />,
+    path:"/flight"
   },
   {
     name: "Accommodation ",
     icon: <FaHotel />,
+    path:"/accommodation"
   },
   {
     name: "Tour",
     icon: <MdTour />,
+    path:"/tours/home"
   },
 
 
 ];
 const Services = () => {
+  const Navigate =useNavigate();
   return (
     <>
       <div class="lg:px-36 lg:pt-5 lg:pb-[90px]">
@@ -44,7 +48,7 @@ const Services = () => {
           </div>
           <div class="-mx-4 grid lg:grid-cols-3 gap-6">
             {categories.map((category) => (
-              <div class="mb-8 rounded-[20px] bg-white p-2 shadow-md  hover:shadow-lg md:px-7  grid grid-cols-2 justify-center">
+              <div onClick={()=>Navigate(category.path)} class="mb-8 rounded-[20px] bg-white p-2 shadow-md  hover:shadow-lg md:px-7  grid grid-cols-2 justify-center">
                 <div class=" text-black text-3xl mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl">
                   {category.icon}
                 </div>

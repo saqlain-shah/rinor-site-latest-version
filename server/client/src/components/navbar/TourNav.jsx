@@ -16,10 +16,6 @@ const nav_links = [
     display: "Cultural",
   },
   {
-    path: "/special-interest",
-    display: "Special Interest",
-  },
-  {
     path: "/leisure",
     display: "Leisure",
   },
