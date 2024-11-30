@@ -44,7 +44,7 @@ const HeroTour = () => {
                   </h4>
                 </div>
               </div>
-              <SearchBar />
+              {/* <SearchBar /> */}
             </div>
           </div>
         </div>

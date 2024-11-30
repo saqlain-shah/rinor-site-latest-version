@@ -42,10 +42,10 @@ const Navbar = () => {
         </Link>
       </div>
       {/* <!-- left header section --> */}
-      <div className="items-center hidden space-x-5 md:flex">
+      <div className="items-center justify-end float-end hidden space-x-5 md:flex">
         <Link to="/">Home</Link>
-        <Link to="/flight">Flight</Link>
-        <Link to="/accommodation">Accommodation</Link>
+        <Link className="hidden" to="/flight">Flight</Link>
+        <Link className="hidden" to="/accommodation">Accommodation</Link>
         <Link to="/tours/home">Tours</Link>
         <Link to="/contactus">Contact us</Link>
       </div>
